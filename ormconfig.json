@@ -1,0 +1,21 @@
+{
+    "type": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "username": "raro",
+    "password": "raro",
+    "database": "raro_tube",
+    "migrations": ["src/typeorm/migration/*.ts"],
+    "entities": ["./src/models/**/*Entity.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
+
+
+    "cli": {
+        "entitiesDir": "src/models",
+        "migrationsDir": "src/typeorm/migration",
+        "subscribersDir": "src/subscriber"
+
+    }
+
+
+}
